@@ -1,32 +1,26 @@
 {
-  "name": "marcopolo",
+  "name": "userstory",
   "version": "1.0.0",
-  "description": "Demonstrate of marcopolo game",
+  "description": "Demonstrate of user story",
   "main": "app/index.html",
   "scripts": {
     "test": "karma start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/7mmsingh31246/marcopologame.git"
+    "url": "https://github.com/7mmsingh31246/userstory.git"
   },
   "keywords": [
-    "marco",
-    "polo",
-    "game"
+    "ASCII"
   ],
   "author": "Manmohan Singh",
   "devDependencies": {
-    "jasmine-core": "^2.4.1",
-    "karma": "^0.13.22",
-    "karma-chrome-launcher": "^0.2.2",
-    "karma-jasmine": "^0.3.7"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/7mmsingh31246/marcopologame/issues"
+    "url": "https://github.com/7mmsingh31246/userstory/issues"
   },
-  "homepage": "https://github.com/7mmsingh31246/marcopologame#readme",
+  "homepage": "https://github.com/7mmsingh31246/userstory#readme",
   "dependencies": {
     "express": "^4.14.0"
   }
