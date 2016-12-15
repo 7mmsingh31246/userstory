@@ -5,16 +5,30 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="Description" content="AngularJS Google Map Search">
-<title>marco polo game</title>
+<title>Parse invoice numbers</title>
 <link rel="stylesheet" href="/css/style.css" />
 </head>
-<body>
-<marcopolo></marcopolo>
-<fileinput on-change="readFile()"></fileinput>
-{{chars|json}}
-{{result}}
+<body ng-controller="mainController">
+<div id="wrapper">
+  <div id="content">
+    <div id="searchfield">
+      <h1>Parse invoice numbers</h1>
+      <form>
+        <label class="fileinput" for="fileinput">Upload File
+          <fileinput id="fileinput" ng-model="file" accept=".txt" on-change="readFile();"></fileinput>
+        </label>
+      </form>
+    </div>
+    <div id="resultfield" ng-if="invoiceNumbers.length">
+      <h1>Your invoice numbers below here</h1>
+      <ul>
+        <li ng-repeat="ivn in invoiceNumbers">{{ivn}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
 <script type="text/javascript" src="lib/angular.min.js"></script> 
 <script type="text/javascript" src="app.js"></script> 
-<script type="text/javascript" src="factory.js"></script> 
+<script type="text/javascript" src="factory.js"></script>
 </body>
 </html>
